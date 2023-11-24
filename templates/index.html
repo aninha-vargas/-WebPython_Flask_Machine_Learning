@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Classifier</title>
+</head>
+<body>
+    <h1>ML Classifier</h1>
+    <form method="post">
+        <label for="classifier">Choose a Classifier:</label>
+        <select name="classifier" required>
+            <option value="KNN">KNN</option>
+            <option value="SVM">SVM</option>
+            <option value="MLP">MLP</option>
+            <option value="DT">Decision Tree</option>
+            <option value="RF">Random Forest</option>
+        </select>
+
+        <label for="param1">Parameter 1:</label>
+        <input type="number" name="param1" step="0.1" required>
+
+        <label for="param2">Parameter 2:</label>
+        <input type="number" name="param2" step="1">
+
+        <button type="submit">Run</button>
+    </form>
+</body>
+</html>
